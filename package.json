@@ -6,7 +6,8 @@
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/y1n0/vscode-icomoon-viewer.git"
-	  },
+	},
+	"license": "MIT",
 	"engines": {
 		"vscode": "^1.65.0"
 	},
@@ -14,7 +15,8 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onView:IcomoonIconsPanel"
+		"onView:IcomoonIconsPanel",
+		"workspaceContains:**/selection.json"
 	],
 	"main": "./src/extension.js",
 	"contributes": {
