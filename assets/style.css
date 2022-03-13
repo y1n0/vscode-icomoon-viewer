@@ -1,0 +1,68 @@
+.icons-grid {
+	list-style: none;
+	display: grid;
+	gap: .5rem 0;
+	grid-template-columns: repeat(auto-fill, 5rem);
+	place-content: space-evenly;
+}
+
+.grid-item {
+}
+
+.icon-box {
+	color: var(--vscode-editor-foreground);
+	opacity: .5;
+}
+
+.icon-box:hover {
+	opacity: 1;
+}
+
+.icon-name {
+	margin-top: .25rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	background: var(--vscode-sideBar-background);
+	overflow: hidden;
+	text-align: center;
+}
+.icon-box:hover .icon-name {
+	overflow: visible;
+    position: relative;
+    z-index: 1;
+	width: fit-content;
+    min-width: 100%;
+    box-sizing: content-box;
+	
+    margin-left: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-shadow: 0px 0px 12px 0px black;
+    border-radius: 12px;
+}
+.icon-box:hover .icon {
+	overflow: visible;
+	border-color: currentColor;
+}
+
+.icon {
+	fill: currentColor;
+	aspect-ratio: 1 / 1;
+	border: 1px solid transparent;
+	padding: .75rem;
+	border-radius: .25rem;
+	width: 100%;
+	display: block;
+	cursor: pointer;
+}
+
+#search {
+    display: block;
+    width: -webkit-fill-available;
+    background: var(--vscode-input-background);
+    color: var(--vscode-input-foreground);
+    border: var(--vscode-input-border);
+    margin: .5rem;
+    height: 2.4rem;
+    padding: .5rem;
+}
