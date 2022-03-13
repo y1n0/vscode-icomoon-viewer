@@ -21,6 +21,7 @@ Nada
 No issues. works perfectly.
 
 ## Roadmap
+- support multiple selection.json in a workspace
 - search in icon tags
 - make icon preview size configurable
 - insert <Icon />, jsx, or svg snippet on click
